@@ -83,8 +83,7 @@ class Zombie:
       return 'You escaped!'
     else:
       if fight:
-        speed = random.randint(1, Zombie.max_speed)
-        strength = random.randint(1, Zombie.max_strength)
+        zombie
         Zombie.horde.append(Zombie(speed, strength))
         return 'You fought the zombie and caught the plague.  You are now a zombie too.  Raaaawrgh'
       else:
@@ -117,5 +116,6 @@ Zombie.new_day()
 print(Zombie.horde) # [<__main__.Zombie object at 0x7f6f594f0d30>, <__main__.Zombie object at 0x7f6f594efef0>, <__main__.Zombie object at 0x7f6f594f0c50>, <__main__.Zombie object at 0x7f6f594f0cc0>]
 zombie1 = Zombie.horde[0]
 zombie2 = Zombie.horde[1]
+print(zombie1.fight())
 print(zombie1.encounter()) # You died!
 print(zombie2.encounter()) # You escaped!
