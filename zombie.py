@@ -83,8 +83,7 @@ class Zombie:
       return 'You escaped!'
     else:
       if fight:
-        zombie
-        Zombie.horde.append(Zombie(speed, strength))
+        Zombie.spawn()
         return 'You fought the zombie and caught the plague.  You are now a zombie too.  Raaaawrgh'
       else:
         return 'You died.'
